@@ -1,7 +1,18 @@
 # bitbox
 
 
-1. Introduction
+
+
+
+
+
+![IMG-20251227-WA0008~2](https://github.com/user-attachments/assets/426b7b84-5700-4ec1-91e0-65f831375d6a)
+
+
+
+
+
+
 
 Digital electronics works on binary logic , only two states exist:
 
@@ -14,7 +25,7 @@ Digital electronics works on binary logic , only two states exist:
 Logic gates are the basic building blocks that process these binary signals.
 
 This document explains:
-
+ 
 1.AND gate
 
 2.OR gate
@@ -43,6 +54,8 @@ Input A	Input B	Output
 Real Meaning:
 
 Think of two switches in series. Current flows only when both are ON.
+
+
 
 -----------------------
 
