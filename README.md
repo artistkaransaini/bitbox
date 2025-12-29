@@ -79,5 +79,3 @@ A Full Adder is used when an extra bit is already coming from a previous additio
 Inputs: X, Y, and Extra bit from the previous step Outputs: One bit written at the current place, One extra bit passed to the next place
 
 Explanation: First, X and Y are added. Then the extra bit (overflow) from the previous step is added. If the final result fits in one bit, it is written at the current place. If the result becomes two bits, the right bit stays here and the left bit moves forward.
-
-Gates used: OR gates decide the written bit. AND gates detect when the result becomes too large for one bit. OR gate combines those cases and gives the output.
