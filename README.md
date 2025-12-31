@@ -3,37 +3,32 @@ bitbox
 # Logic Gates and Hexabit
 ## Project Summary
 
-This project dives straight into the heart of digital electronics: **binary addition at the hardware level**. Instead of treating addition as something that magically happens inside a CPU, this project breaks it down into its rawest form: voltages, logic gates, and wires.
+i am making a hexabit processor with the help logic gates, ICs and leds and cosntructing differenret gates out of them such as and, or Nand etc and displaying 
 
-The goal is to **physically build and test a Hexabit** on a breadboard using logic gate ICs and LEDs, and to understand exactly how simple gates cooperate to perform meaningful computation.
-
-
----
 
 ## Why I Chose This Project?
 
-Binary addition is the foundation of *everything* in computing. Every calculation performed by a CPU, from adding two numbers to rendering graphics, eventually reduces to this.
+the goal for this project is to get a proper understanding of the working of binary addition (cuz my friend said they are the foundation of *everything* in computing)
 
-By building a multi-bit adder physically, I want to understand:
 
-* How extremely simple gates combine into powerful systems
-* How numbers are added **without software**
-* How CPUs actually perform calculations at the lowest possible level
+by building a multi-bit adder physically, I want to understand:
 
----
+* how extremely simple gates combine to very powerful processors
+* how numbers are added without software
+* how CPUs actually perform calculations at the lowest possible level
+
 
 ## What I Am Building
 
 I am building a **Hexabit** that:
 
-* Takes **two 16-bit binary numbers** as input
-* Produces the correct **16-bit sum and carry output** using only logic gates
-* Displays outputs using **LEDs** for direct visual feedback
-* Is fully built and tested on a **breadboard**
+* takes **two 16-bit binary numbers** as input
+* produces the correct **16-bit sum and carry output** using only logic gates
+* displays outputs using **LEDs** (beautiful blue colored ones)
+* it will be fully built and tested on a **breadboard**
 
-Internally, this circuit is constructed by chaining together **Half Adders and Full Adders**, exactly the same conceptual structure used inside real processors.
+internally, this circut will be made of **Half Adders and Full Adders** which will be repeated again and again and agian to make a **HEXABIT**
 
----
 
 ## Concepts Covered
 
@@ -46,9 +41,8 @@ This project includes explanation and physical implementation of:
 * NOR Gate
 * Half Adder
 * Full Adder
-* Hexabit
+* HEXABIT (16 bit adder)
 
----
 
 ## Logic Gates Used
 
@@ -72,7 +66,6 @@ In binary addition, this situation matters because adding `1` and `1` is the **o
 | 1 | 0 | 0      |
 | 1 | 1 | 1      |
 
----
 
 ### OR Gate
 ![IMG20251230235929~2](https://github.com/user-attachments/assets/65d22a02-efe3-4b59-a1a9-cc2fb4540952)
@@ -115,7 +108,6 @@ This flipping ability is required to build more complex gates. Without NOT, gate
 | 0 | 1      |
 | 1 | 0      |
 
----
 
 ### NAND Gate
 ![IMG_20251231_000500](https://github.com/user-attachments/assets/6efece2f-e66a-4c5d-98f9-abada6cd28ac)
@@ -183,7 +175,6 @@ This behavior matches exactly how binary addition works when no extra bit is pro
 | 1 | 0 | 1      |
 | 1 | 1 | 0      |
 
----
 
 ## How Binary Addition Is Implemented
 
@@ -217,7 +208,6 @@ This is why a Half Adder uses:
 * XOR gate for the main output bit
 * AND gate to detect when both inputs are `1`
 
----
 
 ### Full Adder
 
@@ -242,7 +232,6 @@ Different gates handle each of these checks, and the results are combined carefu
 
 This is what allows addition to continue smoothly across many bit positions.
 
----
 
 ### Hexabit
 
@@ -261,7 +250,6 @@ By connecting many Full Adders in a chain, large numbers can be added reliably.
 
 This design may look simple, but it is exactly how real processors are made as well.
 
----
 
 ## Materials Requested
 
