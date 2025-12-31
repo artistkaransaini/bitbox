@@ -22,41 +22,38 @@ by building a multi-bit adder physically, I want to understand:
 
 I am building a **Hexabit** that:
 
-* takes **two 16-bit binary numbers** as input
-* produces the correct **16-bit sum and carry output** using only logic gates
-* displays outputs using **LEDs** (beautiful blue colored ones)
+* will take **two 16-bit binary numbers** as input
+* produces the correct **16-bit sum and carry output** using logic gates
+* displays outputs using **leds**
 * it will be fully built and tested on a **breadboard**
 
-internally, this circut will be made of **Half Adders and Full Adders** which will be repeated again and again and agian to make a **HEXABIT**
+internally, this circut will be made of **Half Adders and Full Adders** which will be repeated again and again and agian(16 times) to make a **HEXABIT**
 
 
-## Concepts Covered
+## concepts covered
 
-This project includes explanation of:
+this project includes explanation of:
 
-* AND Gate
-* OR Gate
-* NOT Gate
-* NAND Gate
-* NOR Gate
-* Half Adder
-* Full Adder
-* HEXABIT (16 bit adder)how and gates are made using transistors
+* AND gate
+* OR gate
+* NOT gate
+* NAND gate
+* NOR gate
+* 1 bit adder
+* N bit adder
+* HEXABIT (16 bit adder )how and gates are made using transistors
 
 
 ## Logic gates used
 
 ### AND gate
 
-![IMG_20251231_145249](https://github.com/user-attachments/assets/20a11a58-87f9-4c98-b5f0-f42c8141e78c)
 
-
+![IMG_20251231_172354](https://github.com/user-attachments/assets/e3137fff-c3ac-4d58-92f3-50a7344629ec)
 
 The AND gate is very simple in behavior.
 
-Think of it like two switches connected in series. Power reaches the output only when **both switches are ON**. If even one switch is OFF, nothing passes through.
-
-In binary addition, this situation matters because adding `1` and `1` is the **only time** an extra bit is created. The AND gate’s job is to notice exactly that case.
+it acts like two switches connected in series. Power reaches the output only when **both switches are ON**. If even one switch is OFF, nothing will pass through. In binary addition, this situation matters because adding `1` and `1` is the **only time** an extra bit is created. The AND gate’s job is to notice exactly that case.
 
 **Truth Table**
 
@@ -173,12 +170,13 @@ This behavior matches exactly how binary addition works when no extra bit is pro
 
 ## How Binary Addition Is Implemented
 
-### Half Adder
+### 1 bit adder
 
 ![IMG_20251231_010206](https://github.com/user-attachments/assets/c35dfd2f-b728-435f-8f8b-b9839520868e)
 
+this daigram shows a half adder made using NAND gate, OR gate, & AND gate
 
-A Half Adder handles the most basic possible addition.
+A 1 bit adder (half adder) handles the most basic possible addition.
 
 It adds **two single binary digits**.
 
@@ -192,45 +190,25 @@ Binary addition works like this:
 That last case is important.
 
 The result has **two bits**. One bit stays in the current position, and the other bit moves to the next position.
+and instead of treating this as one result, the circuit separates the task so..
 
-Instead of treating this as one result, the circuit separates the job:
-
-* One gate decides the bit that stays
-* One gate checks if an extra bit needs to move forward
-
-This is why a Half Adder uses:
-
-* XOR gate for the main output bit
-* AND gate to detect when both inputs are `1`
+* NAND gate and OR gate decides the bit that stays
+* AND gate gives us the output
 
 
-### Full Adder
+### n bit adder
 
 ![IMG-20251224-WA0005~2](https://github.com/user-attachments/assets/a56e4141-47dd-4a51-9bad-8b3882a05a9c)
 
-A Full Adder is used when addition is already in progress.
+this is a Nth bit adder. the black box that you see is nothing but the same combination of NAND gate, AND gate and OR gate.
+this n bit adder takes the inputs x and y and the output is then later fed into another 1 bit adder thats adds the output from the first one.
 
-At this point, there may already be **an extra bit coming in** from the previous position.
-
-So a Full Adder adds:
-
-* The two current bits
-* The incoming extra bit
-
-Instead of adding all three at once, the circuit breaks it into simple steps:
-
-1. Add the two main bits
-2. Add the incoming bit to that result
-3. Check if any step produces an extra bit
-
-Different gates handle each of these checks, and the results are combined carefully.
-
-This is what allows addition to continue smoothly across many bit positions.
+sooo when these steps are repeated n times we get an nth bit adder.
 
 
-### Hexabit
+### HEXABIT (what i am gonna build)
 
-A hexabit is built by **repeating the same idea of a full adder again and again**(the more bits thee wishes to add the more times you gotta repeat it).
+A hexabit is built by **repeating the same idea of a 1 bit adder (full adder) again and again** when its done 16 times we get a hexabit (the more bits thy wishes to add the more times you gotta repeat it).
 
 * The first position starts the addition
 * Each next position waits for the extra bit from the previous one
@@ -241,9 +219,8 @@ each position only cares about:
 * Its own two bits
 * Whether an extra bit is arriving
 
-by connecting many Full Adders in a chain, a hexabit (or as many bits as thee wishes) processor can be created.
-
-this design may look simple, but it is exactly how every powerful processor is made as well!
+by connecting many Full Adders in a chain, large numbers can be added to make processors with HUGE calculation power.
+this design may look pookie, but it is exactly how all of the processors are made (it really blows my mind when i think about it)
 
 
 ## Materials Requested
