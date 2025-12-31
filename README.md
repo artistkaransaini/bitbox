@@ -41,8 +41,7 @@ this project includes explanation of:
 * NOR gate
 * 1 bit adder
 * N bit adder
-* HEXABIT (16 bit adder )how and gates are made using transistors
-
+* HEXABIT (16 bit adder )
 
 ## Logic gates used
 
@@ -51,9 +50,9 @@ this project includes explanation of:
 
 ![IMG_20251231_172354](https://github.com/user-attachments/assets/e3137fff-c3ac-4d58-92f3-50a7344629ec)
 
-The AND gate is very simple in behavior.
+the AND gate is very simple in behavior.
 
-it acts like two switches connected in series. Power reaches the output only when **both switches are ON**. If even one switch is OFF, nothing will pass through. In binary addition, this situation matters because adding `1` and `1` is the **only time** an extra bit is created. The AND gate’s job is to notice exactly that case.
+it acts like two switches connected in series. Power reaches the output only when **both switches are ON**. If even one switch is OFF, nothing will pass through. In binary addition, this situation matters because adding `1` and `1` is the **only time** an extra bit is created (cuz binary is like counting numbers which end after zero and 1). The AND gate’s job is to notice exactly that case.
 
 **Truth Table**
 
@@ -96,7 +95,7 @@ in other words ot flips the signal.
 * If the input is ON, the output turns OFF
 * If the input is OFF, the output turns ON
 
-This flipping ability is required to build more complex gates. Without NOT, gates like NAND and NOR would not exist.
+This flipping ability is required to build more complex gates.
 
 **Truth Table**
 
@@ -110,7 +109,6 @@ This flipping ability is required to build more complex gates. Without NOT, gate
 The NAND gate is an AND gate followed immediately by a NOT gate.
 
 it behaves normally for most inputs, but when **both inputs are ON**, it does the opposite and turns OFF.
-
 this gate is extremely popular in real electronics because it is:
 
 * very easy to manufactur
@@ -136,8 +134,6 @@ The NOR gate is an OR gate followed by a NOT gate.
 
 The output turns ON **only when all inputs are OFF**. The moment even one input turns ON, the output shuts off.
 
-NOR gates are commonly used in control logic and memory circuits.
-
 **Truth Table**
 
 | A | B | Output |
@@ -154,9 +150,7 @@ NOR gates are commonly used in control logic and memory circuits.
 
 The XOR gate outputs ON when the two inputs are **different**.
 
-If both inputs are the same, the output stays OFF.
-
-This behavior matches exactly how binary addition works when no extra bit is produced.
+If both inputs are the same, the output stays OFF. this behavior matches exactly how binary addition works when no extra bit is produced.
 
 **Truth Table**
 
@@ -225,7 +219,7 @@ this design may look pookie, but it is exactly how all of the processors are mad
 
 ## Materials Requested
 
-to build and test this project physically, the following materials are required:
+to build and test this project, the following materials are required:
 
 * Breadboards
 * LEDs
