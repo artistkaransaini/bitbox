@@ -3,7 +3,7 @@ bitbox
 # Logic Gates and Hexabit
 ## Project Summary
 
-i am making a hexabit processor with the help logic gates, ICs and leds and cosntructing differenret gates out of them such as and, or Nand etc and displaying 
+i am making a hexabit processor with the help logic gates, ICs and leds and cosntructing differenret gates out of them such as and, or Nand etc and displaying the outbut on leds (blue ones cuz they are cool)
 
 
 ## Why I Chose This Project?
@@ -32,7 +32,7 @@ internally, this circut will be made of **Half Adders and Full Adders** which wi
 
 ## Concepts Covered
 
-This project includes explanation and physical implementation of:
+This project includes explanation of:
 
 * AND Gate
 * OR Gate
@@ -41,13 +41,14 @@ This project includes explanation and physical implementation of:
 * NOR Gate
 * Half Adder
 * Full Adder
-* HEXABIT (16 bit adder)
+* HEXABIT (16 bit adder)how and gates are made using transistors
 
 
-## Logic Gates Used
+## Logic gates used
 
-### AND Gate
-![IMG_20251231_000532](https://github.com/user-attachments/assets/01a31d50-4e48-4427-aef8-76c57c6c922a)
+### AND gate
+
+![IMG_20251231_145249](https://github.com/user-attachments/assets/20a11a58-87f9-4c98-b5f0-f42c8141e78c)
 
 
 
@@ -67,16 +68,15 @@ In binary addition, this situation matters because adding `1` and `1` is the **o
 | 1 | 1 | 1      |
 
 
-### OR Gate
-![IMG20251230235929~2](https://github.com/user-attachments/assets/65d22a02-efe3-4b59-a1a9-cc2fb4540952)
+### OR gate
 
+![IMG_20251231_145225](https://github.com/user-attachments/assets/733643ba-5fe6-4671-b7d1-db91b55bae91)
 
+the OR gate behaves like switches connected in parallel.
 
-The OR gate behaves like switches connected in parallel.
+so if **any one** input is ON, the output turns ON
 
-If **any one** input is ON, the output turns ON. It does not care how many inputs are ON, even one is enough.
-
-In adders, extra bits can be created in more than one place. The OR gate is used to **collect all those possibilities** and turn them into one clean signal.
+in adders, extra bits can be created in more than one place. The OR gate is used to **collect ALL those possibilities** and turn them into one clean signal.
 
 **Truth Table**
 
@@ -89,12 +89,12 @@ In adders, extra bits can be created in more than one place. The OR gate is used
 
 ---
 
-### NOT Gate
-![IMG20251230235929~3](https://github.com/user-attachments/assets/ae13f163-746f-42b4-bbd8-0715d4823b98)
+### NOT gate
 
-The NOT gate does only one thing, but that one thing is essential.
 
-It flips the signal.
+the NOT gate (also called the inverted gate cuz it inverts the output) does the work of giving an oupposite output
+
+in other words ot flips the signal.
 
 * If the input is ON, the output turns OFF
 * If the input is OFF, the output turns ON
@@ -110,19 +110,17 @@ This flipping ability is required to build more complex gates. Without NOT, gate
 
 
 ### NAND Gate
-![IMG_20251231_000500](https://github.com/user-attachments/assets/6efece2f-e66a-4c5d-98f9-abada6cd28ac)
-
 The NAND gate is an AND gate followed immediately by a NOT gate.
 
-It behaves normally for most inputs, but when **both inputs are ON**, it does the opposite and turns OFF.
+it behaves normally for most inputs, but when **both inputs are ON**, it does the opposite and turns OFF.
 
-This gate is extremely popular in real electronics because it is:
+this gate is extremely popular in real electronics because it is:
 
-* Easy to manufacture
+* very easy to manufactur
 * Fast
 * Flexible
 
-Entire computers can be built using only NAND gates.
+fun fact: Entire computers can be built using only NAND gates.
 
 **Truth Table**
 
@@ -136,7 +134,6 @@ Entire computers can be built using only NAND gates.
 ---
 
 ### NOR Gate
-![IMG_20251231_000551](https://github.com/user-attachments/assets/17d8a245-7d4e-4e71-a87f-698b9f633293)
 
 The NOR gate is an OR gate followed by a NOT gate.
 
@@ -156,8 +153,6 @@ NOR gates are commonly used in control logic and memory circuits.
 ---
 
 ### XOR Gate
-
-![IMG_20251231_010206](https://github.com/user-attachments/assets/f93a6afb-0712-4b61-9b66-9b53d61573e6)
 
 
 The XOR gate outputs ON when the two inputs are **different**.
@@ -235,25 +230,25 @@ This is what allows addition to continue smoothly across many bit positions.
 
 ### Hexabit
 
-A hexabit is built by **repeating the same idea of a full adder again and again**.
+A hexabit is built by **repeating the same idea of a full adder again and again**(the more bits thee wishes to add the more times you gotta repeat it).
 
 * The first position starts the addition
 * Each next position waits for the extra bit from the previous one
-* The process moves from right to left
+* The process moves from right to left (again and again and again)
 
-Each position only cares about:
+each position only cares about:
 
 * Its own two bits
 * Whether an extra bit is arriving
 
-By connecting many Full Adders in a chain, large numbers can be added reliably.
+by connecting many Full Adders in a chain, a hexabit (or as many bits as thee wishes) processor can be created.
 
-This design may look simple, but it is exactly how real processors are made as well.
+this design may look simple, but it is exactly how every powerful processor is made as well!
 
 
 ## Materials Requested
 
-To build and test this project physically, the following materials are required:
+to build and test this project physically, the following materials are required:
 
 * Breadboards
 * LEDs
