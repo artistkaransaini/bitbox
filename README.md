@@ -241,7 +241,9 @@ sooo when these steps are *repeated n times* we get our Nth bit adder.
 
 ### HEXABIT (what i am gonna build)
 
-![Uploading IMG20260118022829.jpg…]()
+![IMG20260118022829~2](https://github.com/user-attachments/assets/11cddaa5-d157-410b-9c92-e898c0c53abb)
+
+
 
 A hexabit is built by **repeating the same idea of a 1 bit adder (full adder) again and again and again** (the more bits you wish to add the more times you gotta repeat it).
 
