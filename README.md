@@ -48,7 +48,7 @@ this project includes explanation of:
 ### AND gate
 
 
-![IMG_20251231_172354](https://github.com/user-attachments/assets/e3137fff-c3ac-4d58-92f3-50a7344629ec)
+
 
 the AND gate is very simple in behavior.
 
@@ -66,7 +66,6 @@ it acts like two switches connected in series. Power reaches the output only whe
 
 ### OR gate
 
-![IMG_20251231_145225](https://github.com/user-attachments/assets/733643ba-5fe6-4671-b7d1-db91b55bae91)
 
 the OR gate behaves like switches connected in parallel.
 
@@ -166,7 +165,6 @@ If both inputs are the same, the output stays OFF. this behavior matches exactly
 
 ### 1 bit adder
 
-![IMG_20251231_010206](https://github.com/user-attachments/assets/c35dfd2f-b728-435f-8f8b-b9839520868e)
 
 this daigram shows a half adder made using NAND gate, OR gate, & AND gate
 
@@ -192,7 +190,6 @@ and instead of treating this as one result, the circuit separates the task so..
 
 ### n bit adder
 
-![IMG-20251224-WA0005~2](https://github.com/user-attachments/assets/a56e4141-47dd-4a51-9bad-8b3882a05a9c)
 
 this is a Nth bit adder. the black box that you see is nothing but the same combination of NAND gate, AND gate and OR gate.
 this n bit adder takes the inputs x and y and the output is then later fed into another 1 bit adder thats adds the output from the first one.
