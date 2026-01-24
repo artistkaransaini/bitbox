@@ -27,7 +27,7 @@ I am building a **Hexabit** that:
 * displays outputs using **leds**
 * it will be fully built and tested on a **breadboard**
 
-internally, this circut will be made of **Half Adders and Full Adders** which will be repeated again and again and agian (16 times) to make a **HEXABIT**
+internally, this circut will be made of **Half Adders and Full Adders** which will be repeated again and again to make a **HEXABIT**
 
 
 ## concepts covered
