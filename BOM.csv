@@ -1,1 +1,11 @@
+Sl no.,PART NAME,PRICE per unit (INR),PRICE per unit (USD),T.QUANTITY,TOTAL PRICE(INR),TOTAL PRICE(USD),COMPONENT LINK
+1,PCB mount relay,15rs,$0.16,128,1920rs,$20.94,https://quartzcomponents.com/products/spdt-5v-pcb-relay?variant=31898040828039
+2,100 ohm resistor,0.83rs,$0.01,100,120rs,$1.31,https://robocraze.com/products/100-ohm-resistor-pack-of-10
+3,blue leds,0.9rs,$0.01,200,220rs,$2.40,https://robocraze.com/products/blue-led-5mmpack-of-10
+4,"Jumper wires set m2m, m2f, f2f ",128rs,$1.40,1,128rs,$1.40,https://robocraze.com/products/jumper-wire-set-m2m-m2f-f2f-40-pcs-each?variant=40192573636761&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&campaignid=22271813913&adgroupid=&keyword=&device=c&gad_source=1&gad_campaignid=22271815110&gbraid=0AAAAADgHQvZAgN9kmv_Z3cRKL0qNLvGVJ&gclid=CjwKCAiAmKnKBhBrEiwAaqAnZ3PGv-0w7j9NIXaBiSLz4jSC0eB9CldskChtZQTiUeP996oaqas9RRoCT3MQAvD_BwE
+5,M2M jumper wires set,46rs,$0.50,10,460rs,$5.20,https://robu.in/product/male-to-male-jumper-wires-40pcs-20cm/?gad_source=1&gad_campaignid=21296336107&gbraid=0AAAAADvLFWdZAV8tR5fT3FpXLeKaz6F7T&gclid=CjwKCAiAmKnKBhBrEiwAaqAnZ1afzELpACR8iKjRidv24WKyprM-wno0vhyiDCO-lU9NcjURfWpO1BoCzP4QAvD_BwE 
+6,MB102 breadboard,0.67rs,$0.59,10,610rs,$6.65,https://robu.in/product/mb102-830-points-solderless-prototype-pcb-breadboard-high-quality/
+7,3.3V and 5V Power Supply,61rs,$0.6,2,122rs,$1.33,https://robocraze.com/products/breadboard-power-supply-3-3v-5v
+8,5V 1A DC Adapter,78rs,$0.85,2,156rs,$1.70,https://www.electropi.in/5v-1amp-dc-adaptor?gad_source=5&gad_campaignid=23329895947&gclid=EAIaIQobChMIoebStcClkgMVE4lQBh0fAwPZEAQYBSABEgJ2W_D_BwE
+,total,,,,3736rs,$39.93,
 
